@@ -1,5 +1,9 @@
 # Sunson Farms
 
+Contains experiments and dashboards for Sunson farms.
+
+## Building and running
+
 This is an [Observable Framework](https://observablehq.com/framework/) app. To install the required dependencies, run:
 
 ```
