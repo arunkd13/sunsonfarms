@@ -18,5 +18,6 @@ const experiments = yaml.loadAll(text);
 ```
 
 ```js
-Inputs.table(experiments)
+import {ExperimentsTable} from './components/experiments.js'
+display(ExperimentsTable(experiments))
 ```

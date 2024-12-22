@@ -6,8 +6,10 @@ action: >
   that day.
 expected: >
   Horsegram germinates with NE monsoon rains in a week.
-eta: 2024-12-01
-result: Just one or two seeds germinated.
+result:
+  eta: 2024-12-01
+  state: failure
+  description: Just one or two seeds germinated.
 learning: Horsegram seeds should not get buried too deep. The recommendation is
   to plant it at a depth of twice the diameter.
 ---
@@ -17,5 +19,6 @@ action: >
   likely rains in a few days.
 expected: >
   Seeds germinate in NE monsoon in a month or two
-eta: 2025-02-17
+result:
+  eta: 2025-02-17
 ---
