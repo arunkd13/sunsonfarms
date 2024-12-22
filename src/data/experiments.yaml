@@ -22,3 +22,77 @@ expected: >
 result:
   eta: 2025-02-17
 ---
+date: 2024-12-04
+action: >
+  Transplanted beans that were damaged with water logging, onto drier bunds.
+  This was on wet soil with adequete rains.
+expected: Plants recover and grow with good yields.
+result:
+  eta: 2025-02-04
+---
+date: 2024-12-17
+action: Sowed horsegram on high bunds in wet soil with some expected immediate rains.
+expected: Good germination and growth
+result:
+  eta: 2025-03-17
+---
+date: 2024-12-09
+action: >
+  Created trench around saplings with high mounds around stem to prevent damage
+  from water logging.
+expected: Saplings survive heavy NE monsoon.
+result:
+  eta: 2025-01-15
+---
+date: 2024-12-01
+action: >
+  Winding trench on the crop field to drain heavy rain water and also used for
+  irrigation.
+expected: >
+  Crops survive heavy NE monsoon. Should also be able to grow irrigated crop
+  after rains.
+result:
+  eta: 2024-03-01
+---
+date: 2024-12-17
+action: >
+  Collected cow dung and started compost heap.
+expected: >
+  Able to get rich compost in less than 3 months. Should be able to use it for
+  making seeed pellets and also for emergency fertilization for fruit saplings
+  that show low growth.
+result:
+  eta: 2024-03-17
+---
+date: 2024-12-25
+action: >
+  Tilled bed that had never been tilled and containing heavy bermuda grass and
+  other weeds. This was before the final heavy NE monsoon rains.
+expected: >
+  Able to broadcast seeds and lightly hoe once water has sufficiently drained
+  after NE monsoon.
+result:
+  eta: 2025-01-25
+---
+date: 2024-11-13
+action: >
+  Sowed Mucuna on the bunds of the winding irrigation trench. This was just
+  before the heavy NE monsoon rains.
+expected: >
+  Mucuna germinates with the rains and grow profusely with the ample water fromt
+  he NE monsoon rains.
+result:
+  state: failure
+  description: >
+    Mucuna seeds likely rotted due to water logging from heavy NE monsoon. Even
+    well grown Mucuna plans had rotted with water stagnation in other beds.
+---
+date: 2024-11-01
+action: >
+  Grew pigeon pea over the SE monsoon with flowers and first flush of pods ready in November.
+expected: Rapid growth with NE monsoon rains and more flowers and pods after that in December.
+result:
+  state: mixed
+  description: >
+    Only plants which were on very high bunds survived. The rest which had more
+    water logging or did not have deep roots, rotted away with the heavy rains.

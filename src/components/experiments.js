@@ -4,6 +4,12 @@ export function ExperimentsTable(data) {
     return html`
         <table>
             <style>
+                th, td {
+                    padding: 5px;
+                }
+                .header th {
+                    font-weight: bold;
+                }
                 .success {
                     background-color: #00FFBB;
                 }
@@ -14,11 +20,11 @@ export function ExperimentsTable(data) {
                     background-color: #FF95AD;
                 }
             </style>
-            <tr>
-                <td>Date</td>
-                <td>Action</td>
-                <td>Result</td>
-                <td>Learning</td>
+            <tr class="header">
+                <th>Date</td>
+                <th>Action</td>
+                <th>Result</td>
+                <th>Learning</td>
             </tr>
             ${data.filter(row => !!row).map((row , i) => html.fragment`
             <tr>
