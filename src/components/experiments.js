@@ -1,6 +1,9 @@
 import {html} from "npm:htl";
 
 export function ExperimentsTable(data) {
+    data.sort((a, b) => {
+        return a.date < b.date
+    });
     return html`
         <table>
             <style>
@@ -21,15 +24,17 @@ export function ExperimentsTable(data) {
                 }
             </style>
             <tr class="header">
-                <th>Date</td>
-                <th>Action</td>
-                <th>Result</td>
-                <th>Learning</td>
+                <th>Date</th>
+                <th>Action</th>
+                <th>Expectation</th>
+                <th>Result</th>
+                <th>Learning</th>
             </tr>
             ${data.filter(row => !!row).map((row , i) => html.fragment`
             <tr>
                 <td>${formatDate(row.date)}</td>
                 <td>${row.action}</td>
+                <td>${row.expected}</td>
                 <td class="${(row.result.state)?classFromState(row.result.state):""}">
                     ${formatResult(row.result)}
                 </td>

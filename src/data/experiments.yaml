@@ -1,26 +1,15 @@
----
-date: 2024-11-13
+date: 2024-12-27
 action: >
-  Sowed horsegram directly on untilled soil with thick grass cover and had to
-  deep hoe it. Seeds were buried more than 3 inches. Soil was wet with rains
-  that day.
+  Broadcasted Pigen Pea, Pulicha Keerai, Green Gram and Sunn Hemp seeds and then
+  tilled the soil to kill the grass and weed cover. The weed cover was quite
+  heavy even though this area has been cultivated for a year. Soil was wet on
+  the first day, but the rest of the weeks are expected to be dry.
 expected: >
-  Horsegram germinates with NE monsoon rains in a week.
+  Likely the seeds will not germinate because of lack of moisture and also
+  because they got buried too deep. I will need to broadcast seeds again and
+  bury them once again, followed by immediate irrigation.
 result:
-  eta: 2024-12-01
-  state: failure
-  description: Just one or two seeds germinated.
-learning: Horsegram seeds should not get buried too deep. The recommendation is
-  to plant it at a depth of twice the diameter.
----
-date: 2024-11-17
-action: >
-  Planted custard apple seeds directly on mounds with wet soil condition and
-  likely rains in a few days.
-expected: >
-  Seeds germinate in NE monsoon in a month or two
-result:
-  eta: 2025-02-17
+  eta: 2025-01-03
 ---
 date: 2024-12-04
 action: >
@@ -74,6 +63,31 @@ expected: >
 result:
   eta: 2025-01-25
 ---
+date: 2024-11-17
+action: >
+  Planted custard apple seeds directly on mounds with wet soil condition and
+  likely rains in a few days.
+expected: >
+  Seeds germinate in NE monsoon in a month or two
+result:
+  eta: 2025-02-17
+---
+date: 2024-11-13
+action: >
+  Sowed horsegram directly on untilled soil with thick grass cover and had to
+  deep hoe it. Seeds were buried more than 3 inches. Soil was wet with rains
+  that day.
+expected: >
+  Horsegram germinates with NE monsoon rains in a week.
+result:
+  eta: 2024-12-01
+  state: failure
+  description: Just one or two seeds germinated.
+learning: >
+  For untilled toil, it is better to till once without seeding. Then after
+  letting the plant mass to dry, the area can be seeded and then either raked or
+  lightly hoed to bury the seeds at a lower depth.
+---
 date: 2024-11-13
 action: >
   Sowed Mucuna on the bunds of the winding irrigation trench. This was just
@@ -86,6 +100,10 @@ result:
   description: >
     Mucuna seeds likely rotted due to water logging from heavy NE monsoon. Even
     well grown Mucuna plans had rotted with water stagnation in other beds.
+learning: >
+  Tolerance to water logging: Black Gram, Peanut > Mucuna.  Mucuna needs to be
+  established much before the NE monsoon. Best time till now has been March,
+  April.
 ---
 date: 2024-11-01
 action: >
@@ -96,3 +114,52 @@ result:
   description: >
     Only plants which were on very high bunds survived. The rest which had more
     water logging or did not have deep roots, rotted away with the heavy rains.
+    Black Gram and Peanut plants in the same bunds fared better.
+learning: >
+  Tolerance to Water Logging: Black Gram, Peanut > Pigeon pea.
+  Plant pigeon pea earlier in July itself, so that they yielf before NE monsoon.
+  Also, it should be planted in higher ground if planted later.
+---
+date: 2024-11-01
+action: >
+  Pelletized pigeon pea seeds with the powdered clay using a pan.
+expected: Usable seeds with thick clay coating.
+result:
+  state: mixed
+  description: >
+    The clay coating cracks on drying. Also takes more time to make a thicker coat.
+learning: >
+  Need to try adding compost to the mixture to reduce the cracking. Also for
+  larger scale, I need to try a rotary mixer, probably a electrically operated
+  concrete mixer.
+---
+date: 2024-11-01
+action: >
+  Powdered the dry clay pieces by grating against a french fry cutter that was
+  lying useless in the kitchen. Then sieved using a fine mesh to get fine clay powder.
+expected: >
+  The process is not too much work.
+result:
+  state: mixed
+  description: >
+    The process lots of time and effort. Sometimes the finger gets cut on the grate.
+learning: >
+  Need to try the hand operated rotary grain mill or even a mixer grinder.
+---
+date: 2024-06-01
+action: >
+  Made clay from the soil on the farm using the process of levigation. Tied the
+  clay and water mixture in an old dhoti and hung it from a tree branch for a
+  week, for the water to drain.
+expected: >
+  Get good quality dry clay in a week for making seed balls / pellets.
+result:
+  state: mixed
+  description: >
+    A week is too long and the dhoti gets torn when separating the dry clay.
+    The big pieces of dry clay need to be powdered for it to be usable, which is
+    an additional work, that I didn't account for.
+learning: >
+  Need to remove the clay before it dries completely. Need effecient way to
+  powder the large dried clay pieces.
+
