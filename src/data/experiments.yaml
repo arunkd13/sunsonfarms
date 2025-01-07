@@ -1,3 +1,12 @@
+date: 2025-01-03
+action: >
+  Tilled Field 1, broadcasted black gram, rosella, ground nut and sunn hemp,
+  raked them into the soil and irrigated field.
+expected: >
+  Good germination in a week and a good harvest.
+result:
+    eta: 2025-01-03
+---
 date: 2024-12-27
 action: >
   Broadcasted Pigen Pea, Pulicha Keerai, Green Gram and Sunn Hemp seeds and then
@@ -10,6 +19,8 @@ expected: >
   bury them once again, followed by immediate irrigation.
 result:
   eta: 2025-01-03
+  description: >
+    There was some germination a week later.
 ---
 date: 2024-12-04
 action: >
@@ -42,6 +53,8 @@ expected: >
   after rains.
 result:
   eta: 2024-03-01
+  description: >
+    Irrigation on 2025-01-04 was smooth.
 ---
 date: 2024-12-17
 action: >

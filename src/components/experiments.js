@@ -54,10 +54,10 @@ function formatDate(date) {
 }
 
 function formatResult(result) {
-    if (!result.state) {
-        return html.fragment`⏳ ${formatDate(result.eta)}`;
-    }
-    return html.fragment`${result.description}`;
+    return html.fragment`
+        ${(!result.state)?html.fragment`⏳ ${formatDate(result.eta)}<p>`:""}
+        ${result.description}
+    `;
 } 
 
 function classFromState(state) {
