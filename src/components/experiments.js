@@ -25,18 +25,20 @@ export function ExperimentsTable(data) {
             </style>
             <tr class="header">
                 <th>Date</th>
-                <th>Action</th>
-                <th>Expectation</th>
-                <th>Result</th>
+                <th>Experiment</th>
+                <th>Observations</th>
                 <th>Learning</th>
             </tr>
             ${data.filter(row => !!row).map((row , i) => html.fragment`
             <tr>
                 <td>${formatDate(row.date)}</td>
-                <td>${row.action}</td>
-                <td>${row.expected}</td>
-                <td class="${(row.result.state)?classFromState(row.result.state):""}">
-                    ${formatResult(row.result)}
+                <td>
+                    ${row.action}<p>
+                    <strong>Expectation:</strong> ${row.expected}
+                </td>
+                <td class="${(row.result)?classFromResult(row.result):""}">
+                    ${(!row.result)?html.fragment`⏳ ${formatDate(row.eta)}<p>`:""}
+                    ${formatObservations(row.observations)}
                 </td>
                 <td>${row.learning}</td>
             </tr>
@@ -53,13 +55,22 @@ function formatDate(date) {
     })
 }
 
-function formatResult(result) {
-    return html.fragment`
-        ${(!result.state)?html.fragment`⏳ ${formatDate(result.eta)}<p>`:""}
-        ${result.description}
-    `;
+function formatObservations(observations) {
+    if (observations) {
+        return html.fragment`
+            ${observations.map(observation => html.fragment`
+                <p>
+                    <strong>${formatDate(observation.date)}</strong><br>
+                    ${observation.note}
+                </p>
+                `
+            )}
+        `;
+    }
+
+    return "";
 } 
 
-function classFromState(state) {
-    return state === "success" ? "success" : state === "failure" ? "failure" : "mixed";
+function classFromResult(result) {
+    return result === "success" ? "success" : result === "failure" ? "failure" : "mixed";
 }

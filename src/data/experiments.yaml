@@ -1,11 +1,57 @@
+date: 2025-01-10
+action: >
+  Tilled 1st bed of Field 5. Later bed became wet with overflown irrigation
+  water and some light sprinkles of rain. Broadcasted black horse gram seeds.
+  The seeds were damaged due to moisture. Over seeded to compensate. Lightly
+  hoed the bed once again after broadcasting the seeds.
+expected: >
+  The seeds germinate in a week. Sufficient growth to overcome weeds and fair yields.
+eta: 2025-05-10
+---
+date: 2025-01-10
+action: >
+  Broadcasted mucuna seeds on the first two trenches of Field 2 and hoed to
+  cover them with soil.
+expected: >
+  Expecting germination in two weeks and profuse growth throughout the year
+  smothering other weeds. This should be better than previous attempt at growing
+  mucuna on the beds, where the growth was poor doe to lack of moisture. Mucuna
+  should die with water logging due to NE monsoon, and before it sets seeds.
+  This will ensure that, the field is not infested with Mucuna the next season.
+eta: 2026-01-10
+---
+date: 2025-01-10
+action: >
+  Broadcasted green gram seeds on one trench on the Food Forest 1 and hoed to
+  cover the seed.
+expected: >
+  Seeds germinate with sufficient growth that by the time of next irrigation in
+  a week or two, it is able to survive an hour of flooding during irrigation.
+  Growth should also be better than the beds, where irrigation water does not
+  wet the soil.
+eta: 2025-03-10
+---
+date: 2025-01-10
+action: >
+  Broadcasted black horse gram seeds that were damaged due to moisture, onto 3
+  trenches on Food Forest 1. Then lightly hoed the trench to cover the seeds.
+expected: >
+  Seeds germinate in a week and they survive an hour of flooding when
+  irrigating. Growth should be better than beds where the irrigation water is
+  not able to wet the soil.
+eta: 2025-05-10
+---
 date: 2025-01-03
 action: >
   Tilled Field 1, broadcasted black gram, rosella, ground nut and sunn hemp,
   raked them into the soil and irrigated field.
 expected: >
   Good germination in a week and a good harvest.
-result:
-    eta: 2025-01-03
+eta: 2025-01-03
+observations:
+  -
+    date: 2025-01-10
+    note: Fair germination
 ---
 date: 2024-12-27
 action: >
@@ -17,32 +63,44 @@ expected: >
   Likely the seeds will not germinate because of lack of moisture and also
   because they got buried too deep. I will need to broadcast seeds again and
   bury them once again, followed by immediate irrigation.
-result:
-  eta: 2025-01-03
-  description: >
-    There was some germination a week later.
+eta: 2025-01-03
+observations:
+  -
+    date: 2025-01-10
+    note: >
+      There was some germination a week later.
 ---
 date: 2024-12-04
 action: >
-  Transplanted beans that were damaged with water logging, onto drier bunds.
+  Transplanted cow pea that were damaged with water logging, onto drier bunds.
   This was on wet soil with adequete rains.
 expected: Plants recover and grow with good yields.
-result:
-  eta: 2025-02-04
+eta: 2025-02-04
+observations:
+  -
+    date: 2025-01-10
+    note: >
+      Plants survived, but still short. Lots of weeds around. Some plants have
+      started flowering and bearing pods.
 ---
 date: 2024-12-17
 action: Sowed horsegram on high bunds in wet soil with some expected immediate rains.
 expected: Good germination and growth
-result:
-  eta: 2025-03-17
+eta: 2025-03-17
+observations:
+  -
+    date: 2025-01-10
+    note: >
+      Germinated, but with no rains, growth is low. Irrigation water does not
+      wet the high bund.
 ---
 date: 2024-12-09
 action: >
   Created trench around saplings with high mounds around stem to prevent damage
   from water logging.
 expected: Saplings survive heavy NE monsoon.
-result:
-  eta: 2025-01-15
+eta: 2025-01-15
+observations:
 ---
 date: 2024-12-01
 action: >
@@ -51,10 +109,12 @@ action: >
 expected: >
   Crops survive heavy NE monsoon. Should also be able to grow irrigated crop
   after rains.
-result:
-  eta: 2024-03-01
-  description: >
-    Irrigation on 2025-01-04 was smooth.
+eta: 2024-03-01
+observations:
+  -
+    date: 2025-01-04
+    note: >
+      Irrigation was smooth.
 ---
 date: 2024-12-17
 action: >
@@ -63,8 +123,14 @@ expected: >
   Able to get rich compost in less than 3 months. Should be able to use it for
   making seeed pellets and also for emergency fertilization for fruit saplings
   that show low growth.
-result:
-  eta: 2024-03-17
+eta: 2024-03-17
+observations:
+  -
+    date: 2025-01-03
+    note: >
+      The area remained dry. So moved the compost heap onto beginning of
+      alternate beds that is near the pathway, so that irrigation water wets the
+      heap.
 ---
 date: 2024-12-25
 action: >
@@ -73,8 +139,23 @@ action: >
 expected: >
   Able to broadcast seeds and lightly hoe once water has sufficiently drained
   after NE monsoon.
-result:
-  eta: 2025-01-25
+eta: 2025-01-25
+observations:
+---
+date: 2024-11-01
+action: >
+  Planted cow pea onto bed 1 of Field 1.
+expected: >
+  Expectation they survive NE monsoon and
+  provide good yield.
+eta: 2025-02-01
+observations:
+  -
+    date: 2025-01-10
+    note: >
+      Fair number of plants survived floowing due to NE monsoon. Survived
+      plants had profuse growth after the last rain and bore pods in just a week.
+
 ---
 date: 2024-11-17
 action: >
@@ -82,8 +163,8 @@ action: >
   likely rains in a few days.
 expected: >
   Seeds germinate in NE monsoon in a month or two
-result:
-  eta: 2025-02-17
+eta: 2025-02-17
+observations:
 ---
 date: 2024-11-13
 action: >
@@ -92,10 +173,12 @@ action: >
   that day.
 expected: >
   Horsegram germinates with NE monsoon rains in a week.
-result:
-  eta: 2024-12-01
-  state: failure
-  description: Just one or two seeds germinated.
+eta: 2024-12-01
+observations:
+  -
+    date: 2024-12-14
+    note: Just one or two seeds germinated.
+result: failure
 learning: >
   For untilled toil, it is better to till once without seeding. Then after
   letting the plant mass to dry, the area can be seeded and then either raked or
@@ -108,39 +191,45 @@ action: >
 expected: >
   Mucuna germinates with the rains and grow profusely with the ample water fromt
   he NE monsoon rains.
-result:
-  state: failure
-  description: >
-    Mucuna seeds likely rotted due to water logging from heavy NE monsoon. Even
-    well grown Mucuna plans had rotted with water stagnation in other beds.
+observations:
+  -
+    date: 2024-12-26
+    note: >
+      Mucuna seeds likely rotted due to water logging from heavy NE monsoon. Even
+      well grown Mucuna plans had rotted with water stagnation in other beds.
+result: failure
 learning: >
   Tolerance to water logging: Black Gram, Peanut > Mucuna.  Mucuna needs to be
   established much before the NE monsoon. Best time till now has been March,
   April.
 ---
-date: 2024-11-01
+date: 2024-08-01
 action: >
   Grew pigeon pea over the SE monsoon with flowers and first flush of pods ready in November.
 expected: Rapid growth with NE monsoon rains and more flowers and pods after that in December.
-result:
-  state: mixed
-  description: >
-    Only plants which were on very high bunds survived. The rest which had more
-    water logging or did not have deep roots, rotted away with the heavy rains.
-    Black Gram and Peanut plants in the same bunds fared better.
+observations:
+  -
+    date: 2024-12-26
+    note: >
+      Only plants which were on very high bunds survived. The rest which had more
+      water logging or did not have deep roots, rotted away with the heavy rains.
+      Black Gram and Peanut plants in the same bunds fared better.
+result: mixed
 learning: >
   Tolerance to Water Logging: Black Gram, Peanut > Pigeon pea.
-  Plant pigeon pea earlier in July itself, so that they yielf before NE monsoon.
+  Plant pigeon pea earlier in July itself, so that they yield before NE monsoon.
   Also, it should be planted in higher ground if planted later.
 ---
 date: 2024-11-01
 action: >
   Pelletized pigeon pea seeds with the powdered clay using a pan.
 expected: Usable seeds with thick clay coating.
-result:
-  state: mixed
-  description: >
-    The clay coating cracks on drying. Also takes more time to make a thicker coat.
+observations:
+  -
+    date: 2024-11-02
+    note: >
+      The clay coating cracks on drying. Also takes more time to make a thicker coat.
+result: mixed
 learning: >
   Need to try adding compost to the mixture to reduce the cracking. Also for
   larger scale, I need to try a rotary mixer, probably a electrically operated
@@ -152,10 +241,12 @@ action: >
   lying useless in the kitchen. Then sieved using a fine mesh to get fine clay powder.
 expected: >
   The process is not too much work.
-result:
-  state: mixed
-  description: >
-    The process lots of time and effort. Sometimes the finger gets cut on the grate.
+observations:
+  -
+    date: 2024-11-01
+    note: >
+      The process lots of time and effort. Sometimes the finger gets cut on the grate.
+result: mixed
 learning: >
   Need to try the hand operated rotary grain mill or even a mixer grinder.
 ---
@@ -166,12 +257,14 @@ action: >
   week, for the water to drain.
 expected: >
   Get good quality dry clay in a week for making seed balls / pellets.
-result:
-  state: mixed
-  description: >
-    A week is too long and the dhoti gets torn when separating the dry clay.
-    The big pieces of dry clay need to be powdered for it to be usable, which is
-    an additional work, that I didn't account for.
+observations:
+  -
+    date: 2024-06-08
+    note: >
+      A week is too long and the dhoti gets torn when separating the dry clay.
+      The big pieces of dry clay need to be powdered for it to be usable, which is
+      an additional work, that I didn't account for.
+result: mixed
 learning: >
   Need to remove the clay before it dries completely. Need effecient way to
   powder the large dried clay pieces.
