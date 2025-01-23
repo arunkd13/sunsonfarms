@@ -14,13 +14,16 @@ export function ExperimentsTable(data) {
                     font-weight: bold;
                 }
                 .success {
-                    background-color: #00FFBB;
+                    background-color: #33FF99;
                 }
                 .mixed {
                     background-color: #FFD36B;
                 }
                 .failure {
                     background-color: #FF95AD;
+                }
+                .todo {
+                    list-style-type: "☐ ";
                 }
             </style>
             <tr class="header">
@@ -40,7 +43,19 @@ export function ExperimentsTable(data) {
                     ${(!row.result)?html.fragment`⏳ ${formatDate(row.eta)}<p>`:""}
                     ${formatObservations(row.observations)}
                 </td>
-                <td>${row.learning}</td>
+                <td>
+                    ${row.learning}
+                    ${(row.followup)?html.fragment`
+                        <p>
+                            Followup<br>
+                            <ul class='todo'>
+                                ${row.followup.map((followup, i) => html.fragment`
+                                    <li>${followup.note}</li>
+                                `)}
+                            </ul>
+                        </p>
+                    `:""}
+                </td>
             </tr>
                 `)}
         </table>
