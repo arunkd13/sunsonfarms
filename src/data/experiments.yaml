@@ -3,6 +3,10 @@ date: 2025-01-20
 action: >
   Tilled last two beds of Field 5. Then broadcasted green gram, rosella and sunn
   hemp and then lightly hoed. Irrigated sufficiently.
+crops:
+  - green gram
+  - roselle
+  - sunn hemp
 expected: >
   Good germination and yield.
 eta: 2025-05-10
@@ -13,6 +17,10 @@ action: >
   Tilled first 3 beds of Field 5. Then broadcasted green gram, rosella and sunn
   hemp and then lightly hoed. Could not irrigate due to problem with motor
   connection. But had light showers in a day or two.
+crops: 
+  - green gram
+  - roselle
+  - sunn hemp
 expected: >
   The seeds still germinate with the rains or subsequent irrigation. Have a good
   stand and yield.
@@ -31,6 +39,8 @@ action: >
   water and some light sprinkles of rain. Broadcasted black horse gram seeds.
   The seeds were damaged due to moisture. Over seeded to compensate. Lightly
   hoed the bed once again after broadcasting the seeds.
+crops:
+  - horse gram
 expected: >
   The seeds germinate in a week. Sufficient growth to overcome weeds and fair yields.
 eta: 2025-05-10
@@ -47,6 +57,8 @@ date: 2025-01-10
 action: >
   Broadcasted mucuna seeds on the first two trenches of Field 2 and hoed to
   cover them with soil.
+crops:
+  - mucuna
 expected: >
   Expecting germination in two weeks and profuse growth throughout the year
   smothering other weeds. This should be better than previous attempt at growing
@@ -66,6 +78,8 @@ date: 2025-01-10
 action: >
   Broadcasted green gram seeds on one trench on the Food Forest 1 and hoed to
   cover the seed.
+crops:
+  - green gram
 expected: >
   Seeds germinate with sufficient growth that by the time of next irrigation in
   a week or two, it is able to survive an hour of flooding during irrigation.
@@ -85,6 +99,8 @@ date: 2025-01-10
 action: >
   Broadcasted black horse gram seeds that were damaged due to moisture, onto 3
   trenches on Food Forest 1. Then lightly hoed the trench to cover the seeds.
+crops:
+  - horse gram
 expected: >
   Seeds germinate in a week and they survive an hour of flooding when
   irrigating. Growth should be better than beds where the irrigation water is
@@ -105,6 +121,11 @@ date: 2025-01-03
 action: >
   Tilled Field 1, broadcasted black gram, rosella, ground nut and sunn hemp,
   raked them into the soil and irrigated field.
+crops:
+  - black gram
+  - roselle
+  - ground nut
+  - sunn hemp
 expected: >
   Good germination in a week and a good harvest.
 eta: 2025-01-03
@@ -120,6 +141,11 @@ action: >
   tilled the soil to kill the grass and weed cover on Field 3. The weed cover
   was quite heavy even though this area has been cultivated for a year. Soil was
   wet on the first day, but the rest of the weeks are expected to be dry.
+crops:
+  - pigeon pea
+  - roselle
+  - green gram
+  - sunn hemp
 expected: >
   Likely the seeds will not germinate because of lack of moisture and also
   because they got buried too deep. I will need to broadcast seeds again and
@@ -141,6 +167,8 @@ date: 2024-12-04
 action: >
   Transplanted cow pea that were damaged with water logging, onto drier bunds.
   This was on wet soil with adequete rains.
+crops:
+  - cowpea
 expected: Plants recover and grow with good yields.
 eta: 2025-02-04
 observations:
@@ -157,6 +185,8 @@ followup:
 id: c88ceee1-18c0-4da6-85a3-a12a9862cb1b
 date: 2024-12-17
 action: Sowed horsegram on high bunds in wet soil with some expected immediate rains.
+crops:
+  - horse gram
 expected: Good germination and growth
 eta: 2025-03-17
 observations:
@@ -249,6 +279,8 @@ id: d230688f-2fd1-4192-9ef4-e65f90b71f79
 date: 2024-11-01
 action: >
   Planted cow pea onto bed 1 of Field 1.
+crops:
+  - cowpea
 expected: >
   Expectation they survive NE monsoon and
   provide good yield.
@@ -271,6 +303,8 @@ date: 2024-11-17
 action: >
   Planted custard apple seeds directly on mounds with wet soil condition and
   likely rains in a few days.
+crops:
+  - custard apple
 expected: >
   Seeds germinate in NE monsoon in a month or two
 eta: 2025-02-17
@@ -282,6 +316,8 @@ action: >
   Sowed horsegram directly on untilled soil with thick grass cover and had to
   deep hoe it. Seeds were buried more than 3 inches. Soil was wet with rains
   that day.
+crops:
+  - horse gram
 expected: >
   Horsegram germinates with NE monsoon rains in a week.
 eta: 2024-12-01
@@ -304,6 +340,8 @@ date: 2024-11-13
 action: >
   Sowed Mucuna on the bunds of the winding irrigation trench. This was just
   before the heavy NE monsoon rains.
+crops:
+  - mucuna
 expected: >
   Mucuna germinates with the rains and grow profusely with the ample water fromt
   he NE monsoon rains.
@@ -326,6 +364,8 @@ id: 43a15988-cbb7-4367-b921-309a102c22a4
 date: 2024-11-01
 action: >
   Pelletized pigeon pea seeds with the powdered clay using a pan.
+crops:
+  - pigeon pea
 expected: Usable seeds with thick clay coating.
 observations:
   -
@@ -364,6 +404,8 @@ id: 1a6d198e-9dd6-4139-87a0-2fd127d16367
 date: 2024-08-01
 action: >
   Grew pigeon pea over the SE monsoon with flowers and first flush of pods ready in November.
+crops:
+  - pigeon pea
 expected: Rapid growth with NE monsoon rains and more flowers and pods after that in December.
 observations:
   -
@@ -376,6 +418,10 @@ observations:
     date: 2025-01-23
     note: >
       Harvested 1 kg of pigeon pea pods.
+  -
+    date: 2025-02-06
+    note: >
+      Harvested 0.25 kg of pigeon pea pods.
 result: mixed
 learning: >
   Tolerance to Water Logging: Black Gram, Peanut > Pigeon pea. Survived plants
