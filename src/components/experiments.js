@@ -5,60 +5,47 @@ export function ExperimentsTable(data) {
         return a.date < b.date
     });
     return html`
-        <table>
-            <style>
-                th, td {
-                    padding: 5px;
-                }
-                .header th {
-                    font-weight: bold;
-                }
-                .success {
-                    background-color: #33FF99;
-                }
-                .mixed {
-                    background-color: #FFD36B;
-                }
-                .failure {
-                    background-color: #FF95AD;
-                }
-                .todo {
-                    list-style-type: "☐ ";
-                }
-            </style>
-            <tr class="header">
-                <th>Experiment</th>
-                <th>Observations</th>
-                <th>Learning</th>
-            </tr>
-            ${data.filter(row => !!row).map((row , i) => html.fragment`
-            <tr>
-                <td>
-                    <strong>${formatDate(row.date)}</strong>
-                    <p>${row.action}
+        <style>
+            .success {
+                background-color: #33FF99;
+            }
+            .mixed {
+                background-color: #FFD36B;
+            }
+            .failure {
+                background-color: #FF95AD;
+            }
+            .todo {
+                list-style-type: "☐ ";
+            }
+        </style>
+        ${data.filter(row => !!row).map((row , i) => html.fragment`
+            <strong>🧪 ${formatDate(row.date)}</strong>
+            <div class="grid grid-cols-3">
+                <div class="card">
                     <p>${formatList(row.crops, "🌱")}
+                    <p>${row.action}
                     <p><strong>Expectation:</strong> ${row.expected}
-                </td>
-                <td class="${(row.result)?classFromResult(row.result):""}">
-                    ${(!row.result)?html.fragment`⏳ ${formatDate(row.eta)}<p>`:""}
+                </div>
+                <div class="card ${(row.result)?classFromResult(row.result):""}">
+                    ${(!row.result)?html.fragment`<strong>ETA:</strong> ⏳ ${formatDate(row.eta)}<p>`:""}
                     ${formatObservations(row.observations)}
-                </td>
-                <td>
-                    ${row.learning}
-                    ${(row.followup)?html.fragment`
-                        <p>
-                            Followup<br>
-                            <ul class='todo'>
-                                ${row.followup.map((followup, i) => html.fragment`
-                                    <li>${followup.note}</li>
-                                `)}
-                            </ul>
-                        </p>
-                    `:""}
-                </td>
-            </tr>
-                `)}
-        </table>
+                </div>
+                ${(!!row.learning)?html.fragment`
+                    <div class="card">
+                        <p>${row.learning}</p>
+                        ${(row.followup)?html.fragment`
+                            <p><strong>Followup:</strong><br>
+                                <ul class='todo'>
+                                    ${row.followup.map((followup, i) => html.fragment`
+                                        <li>${followup.note}</li>
+                                    `)}
+                                </ul>
+                            </p>
+                        `:""}
+                    </div>`:""}
+            </div>
+        `)}
     `
 }
 

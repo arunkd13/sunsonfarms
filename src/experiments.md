@@ -4,7 +4,7 @@ title: Experiments
 toc: false
 ---
 
-# Experiments 🧪
+# Experiments 
 
 <!-- Load and transform the data -->
 
