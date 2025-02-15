@@ -1,3 +1,51 @@
+id: 4d3457ae-2950-4217-9f90-6de94b0d7020
+date: 2025-02-13
+action: >
+  Broadcasted and tilled last but one row of field 9.
+crops:
+  - sunn hemp
+  - rosella
+  - green gram
+expected: >
+  Good germination and yield
+eta: 2025-05-15
+---
+id: 8154a1b1-7ce2-4b3d-b455-a25c7e33a577
+date: 2025-02-13
+action: >
+  Broadcasted and tilled last row of field 9.
+crops:
+  - cowpea
+  - sunn hemp
+expected: >
+  Good germination and yield.
+eta: 2025-05-15
+---
+id: 772bc90d-205a-4dd6-a706-5d5487f3b16e
+date: 2025-02-13
+action: >
+  Broadcasted and tilled field 7.
+crops:
+  - sunn hemp
+  - roselle
+  - green gram
+expected: >
+  Good germination and yield
+eta: 2025-05-15
+---
+id: c253c00c-421d-46c4-9ff9-24fda00f2cc2
+date: 2025-02-13
+action: >
+  Tilled last bed of Field 5 and broadcasted mucuna and sunn hemp. Irrigated
+  sufficiently.
+crops:
+  - mucuna
+  - sunn hemp
+expected: >
+  Either sunn hemp or mucuna grow to full strength.
+eta:
+  2025-04-15
+---
 id: 59cbdf23-f796-412d-8a53-23b48160ddcc
 date: 2025-01-20
 action: >
@@ -10,6 +58,11 @@ crops:
 expected: >
   Good germination and yield.
 eta: 2025-05-10
+observations:
+  -
+    date: 2025-02-13
+    note: >
+      Same case as the other two beds. Likely eaten by goats.
 ---
 id: 443cca18-94c8-453c-974c-fc5789cbae0c
 date: 2025-01-16
@@ -31,6 +84,11 @@ observations:
     note: >
       Quite a few germinated seeds probably a day or two old. Irrigated the
       field sufficiently this time.
+  -
+    date: 2025-02-13
+    note: >
+      Sunn Hemp and green gram sprouts seemed to have died. Only few rosella
+      sprouts remain. Found goat droppings on the beds. Likely eaten by goats.
 ---
 id: a7c17e4e-00d9-4ae7-95d5-d4125c158bbe
 date: 2025-01-10
@@ -263,6 +321,11 @@ observations:
       The area remained dry. So moved the compost heap onto beginning of
       alternate beds that is near the pathway, so that irrigation water wets the
       heap.
+  -
+    date: 2025-02-13
+    note: >
+      Added 3 more pits along the irrigation trench and filled with cow dung and
+      dried sticks.
 ---
 id: 8e5788a8-7c9b-4d2c-b6db-cc31ce1191e3
 date: 2024-12-25
@@ -274,6 +337,15 @@ expected: >
   after NE monsoon.
 eta: 2025-01-25
 observations:
+  -
+    date: 2025-02-13
+    note: >
+      Soil was softer and easy to prepare the bed.
+result: success
+followup:
+  -
+    note: >
+      Prepare beds during the summer rains and sow with the SE monsoon.
 ---
 id: d230688f-2fd1-4192-9ef4-e65f90b71f79
 date: 2024-11-01
@@ -296,6 +368,15 @@ observations:
     note: >
       Yielded good amount of pods and also have completely covered and shielded
       the bed.
+  -
+    date: 2025-02-13
+    note: >
+      Continuing to yield pods. I am now using the seeds for planting in other
+      beds.
+result: success
+followup:
+  - 
+    note: Plant cowpea during NE monsoon rains.
 
 ---
 id: 83f5338f-7a12-4e98-b836-7fec959fc098

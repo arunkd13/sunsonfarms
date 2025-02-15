@@ -15,12 +15,19 @@ export function ExperimentsTable(data) {
             .failure {
                 background-color: #FF95AD;
             }
-            .todo {
-                list-style-type: "☐ ";
+            ul {
+                padding-left: 30px;
+                list-style: none;
+            }
+            li.todo:before {
+              content: '☐ ';
+            }
+            li.done:before {
+              content: '🗹 ';
             }
         </style>
         ${data.filter(row => !!row).map((row , i) => html.fragment`
-            <strong>🧪 ${formatDate(row.date)}</strong>
+            <a href="#${row.id}">🧪</a> <strong id="${row.id}">${formatDate(row.date)}</strong>
             <div class="grid grid-cols-3">
                 <div class="card">
                     <p>${formatList(row.crops, "🌱")}
@@ -36,10 +43,8 @@ export function ExperimentsTable(data) {
                         <p>${row.learning}</p>
                         ${(row.followup)?html.fragment`
                             <p><strong>Followup:</strong><br>
-                                <ul class='todo'>
-                                    ${row.followup.map((followup, i) => html.fragment`
-                                        <li>${followup.note}</li>
-                                    `)}
+                                <ul>
+                                    ${row.followup.map((followup, i) => formatFollowup(followup))}
                                 </ul>
                             </p>
                         `:""}
@@ -47,6 +52,22 @@ export function ExperimentsTable(data) {
             </div>
         `)}
     `
+}
+
+function formatFollowup(followup) {
+    if (followup) {
+        const state = (!!followup.id)?"done":"todo";
+        return html.fragment`
+            <li class="${state}">
+                ${(!!followup.id)?html.fragment`
+                    <a href="#${followup.id}">${followup.note}</a>
+                `:html.fragment`
+                    ${followup.note}
+                `}
+            </li>
+        `
+    }
+    return "";
 }
 
 function formatDate(date) {
