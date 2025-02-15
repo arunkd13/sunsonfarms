@@ -31,7 +31,7 @@ export function ExperimentsTable(data) {
                     ${(!row.result)?html.fragment`<strong>ETA:</strong> ⏳ ${formatDate(row.eta)}<p>`:""}
                     ${formatObservations(row.observations)}
                 </div>
-                ${(!!row.learning)?html.fragment`
+                ${(!!row.learning || !!row.followup)?html.fragment`
                     <div class="card">
                         <p>${row.learning}</p>
                         ${(row.followup)?html.fragment`
