@@ -9,6 +9,11 @@ crops:
 expected: >
   Good germination and yield
 eta: 2025-05-15
+observations:
+  -
+    date: 2025-02-18
+    note: >
+      Good germination. Did not irrigate this week.
 ---
 id: 8154a1b1-7ce2-4b3d-b455-a25c7e33a577
 date: 2025-02-13
@@ -20,6 +25,11 @@ crops:
 expected: >
   Good germination and yield.
 eta: 2025-05-15
+observations:
+  -
+      date: 2025-02-18
+      note: >
+        Good germination. Did not irrigate this week.
 ---
 id: 772bc90d-205a-4dd6-a706-5d5487f3b16e
 date: 2025-02-13
@@ -32,6 +42,11 @@ crops:
 expected: >
   Good germination and yield
 eta: 2025-05-15
+observations:
+  -
+    date: 2025-02-18
+    note: >
+      Good germination. Did not irrigate this week.
 ---
 id: c253c00c-421d-46c4-9ff9-24fda00f2cc2
 date: 2025-02-13
@@ -45,6 +60,12 @@ expected: >
   Either sunn hemp or mucuna grow to full strength.
 eta:
   2025-04-15
+observations:
+  -
+    date: 2025-02-18
+    note: >
+      Good germination of sunn hemp. No germination of mucuna. Did not irrigate
+      this week.
 ---
 id: 59cbdf23-f796-412d-8a53-23b48160ddcc
 date: 2025-01-20
