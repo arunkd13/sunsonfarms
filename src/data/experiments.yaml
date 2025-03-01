@@ -14,6 +14,11 @@ observations:
     date: 2025-02-18
     note: >
       Good germination. Did not irrigate this week.
+  -
+    date: 2025-02-25
+    note: >
+      Not enough water to irrigate. If not irrigated next week, seedlings are
+      likely to die.
 ---
 id: 8154a1b1-7ce2-4b3d-b455-a25c7e33a577
 date: 2025-02-13
@@ -30,6 +35,11 @@ observations:
       date: 2025-02-18
       note: >
         Good germination. Did not irrigate this week.
+  -
+    date: 2025-02-25
+    note: >
+      Not enough water to irrigate. If not irrigated next week, seedlings are
+      likely to die.
 ---
 id: 772bc90d-205a-4dd6-a706-5d5487f3b16e
 date: 2025-02-13
@@ -47,6 +57,11 @@ observations:
     date: 2025-02-18
     note: >
       Good germination. Did not irrigate this week.
+  -
+    date: 2025-02-25
+    note: >
+      Not enough water to irrigate. If not irrigated next week, seedlings are
+      likely to die.
 ---
 id: c253c00c-421d-46c4-9ff9-24fda00f2cc2
 date: 2025-02-13
@@ -66,6 +81,10 @@ observations:
     note: >
       Good germination of sunn hemp. No germination of mucuna. Did not irrigate
       this week.
+  -
+    date: 2025-02-25
+    note: >
+      One or two mucuna seeds germinated. Able to irrigate this week.
 ---
 id: 59cbdf23-f796-412d-8a53-23b48160ddcc
 date: 2025-01-20
@@ -84,6 +103,11 @@ observations:
     date: 2025-02-13
     note: >
       Same case as the other two beds. Likely eaten by goats.
+  -
+    date: 2025-02-25
+    note: >
+      Swamped by bermuda grass. Irrigated this week.
+
 ---
 id: 443cca18-94c8-453c-974c-fc5789cbae0c
 date: 2025-01-16
@@ -110,6 +134,10 @@ observations:
     note: >
       Sunn Hemp and green gram sprouts seemed to have died. Only few rosella
       sprouts remain. Found goat droppings on the beds. Likely eaten by goats.
+  -
+    date: 2025-02-25
+    note: >
+      Swamped by bermuda grass. Irrigated this week.
 ---
 id: a7c17e4e-00d9-4ae7-95d5-d4125c158bbe
 date: 2025-01-10
