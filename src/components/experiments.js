@@ -28,9 +28,10 @@ export function ExperimentsTable(data) {
         </style>
         ${data.filter(row => !!row).map((row , i) => html.fragment`
             <a href="#${row.id}">🧪</a> <strong id="${row.id}">${formatDate(row.date)}</strong>
+            ${(row.location)?html.fragment`📍 ${row.location}`:""}
+            ${formatList(row.crops, "🌱")}
             <div class="grid grid-cols-3">
                 <div class="card">
-                    <p>${formatList(row.crops, "🌱")}
                     <p>${row.action}
                     <p><strong>Expectation:</strong> ${row.expected}
                 </div>
