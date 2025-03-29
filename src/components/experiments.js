@@ -1,10 +1,64 @@
 import {html} from "npm:htl";
 
 export function ExperimentsTable(data) {
-    data.sort((a, b) => {
-        return a.date < b.date
+    const groups = data.reduce((accumulator, item) => {
+        if (!(item?.location)) {
+            accumulator.other.push(item);
+        } else if (item.location?.foodforest) {
+            accumulator.foodforest.push(item);
+        }
+        else if (item.location?.field) {
+            accumulator.field.push(item);
+        } else {
+            accumulator.other.push(item);
+        }
+
+        return accumulator;
+    }, {
+        field: [],
+        foodforest: [],
+        other: [],
     });
+
     return html`
+        <style>
+            ul {
+                padding-left: 30px;
+                list-style: none;
+            }
+        </style>
+        ${formatLocationBasedExperiments(groups.field, 'field')}
+        ${formatLocationBasedExperiments(groups.foodforest, 'foodforest')}
+        ${formatOtherExperiments(groups.other, 'other')}
+    `;
+}
+
+function formatLocationBasedExperiments(data, prop) {
+    function linearizeLocation(location, prop) {
+        return location[prop] * 10 + location[prop].bed;
+    }
+    data.sort((a, b) => {
+        return linearizeLocation(a.location, prop) - linearizeLocation(b.location, prop);
+    });
+    return html.fragment`
+        ${data.map(data => html.fragment`
+            <h3>📍 ${prop} ${data.location[prop]} ${data.location.bed?html.fragment`, bed ${data.location.bed.toString()}`:""}</h3>
+            ${formatExperiment(data)}
+        `)}
+    `;
+}
+
+function formatOtherExperiments(data, prop) {
+    return html.fragment`
+        <h3>Other</h3>
+        ${data.map(data => html.fragment`
+            ${formatExperiment(data)}
+        `)}
+    `;
+}
+
+function formatExperiment(row) {
+    return html.fragment`
         <style>
             .success {
                 background-color: #33FF99;
@@ -15,10 +69,6 @@ export function ExperimentsTable(data) {
             .failure {
                 background-color: #FF95AD;
             }
-            ul {
-                padding-left: 30px;
-                list-style: none;
-            }
             li.todo:before {
               content: '☐ ';
             }
@@ -26,9 +76,8 @@ export function ExperimentsTable(data) {
               content: '🗹 ';
             }
         </style>
-        ${data.filter(row => !!row).map((row , i) => html.fragment`
+        ${html.fragment`
             <a href="#${row.id}">🧪</a> <strong id="${row.id}">${formatDate(row.date)}</strong>
-            ${(row.location)?html.fragment`📍 ${row.location}`:""}
             ${formatList(row.crops, "🌱")}
             <div class="grid grid-cols-3">
                 <div class="card">
@@ -51,9 +100,10 @@ export function ExperimentsTable(data) {
                         `:""}
                     </div>`:""}
             </div>
-        `)}
+        `}
     `
 }
+
 
 function formatFollowup(followup) {
     if (followup) {
